@@ -12,7 +12,7 @@ const getPort = () => {
 
 const config = defineConfig({
   server: {
-    port: getPort(),
+    port: rocess.env.PORT,
   },
   plugins: [
     svelte({
